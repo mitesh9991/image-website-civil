@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+.active{
+	@apply text-indigo-500
+}
+
 .float{
 	position:fixed;
 	width:60px;
