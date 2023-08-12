@@ -7,7 +7,7 @@ const outDir = resolve(__dirname, "dist");
 
 /** @type {import('vite').UserConfig} */
 export default {
-  base: "/gslc2/",
+  base: "./",
   root,
   build: {
     outDir,
