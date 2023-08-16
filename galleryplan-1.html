@@ -14,28 +14,32 @@
   <body>
     <!-- hero - start -->
     <header
-      class="bg-white mb-4 flex items-center justify-between py-5 px-8 md:px-16 lg:px-28 md:py-8 sticky top-0 z-30"
+      class="bg-white mb-4 flex items-center justify-between py-3 px-8 md:px-16 lg:px-28 md:py-4 sticky top-0 z-30"
     >
-      <!-- logo - start -->
-      <a
-        href="/"
-        class="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
-        aria-label="logo"
-      >
-        <svg
-          width="95"
-          height="94"
-          viewBox="0 0 95 94"
-          class="h-auto w-6 text-indigo-500"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-        </svg>
+       <!-- logo - start -->
+       <a
+       href="index.html#"
+       class="inline-flex items-center gap-2.5 text-3xl font-bold text-[#023a6e] md:text-3xl"
+       aria-label="logo"
+     >
 
-        Image
-      </a>
-      <!-- logo - end -->
+     <img class="w-16 h-16 md:w-20 md:h-20" src="img/logo2.png" alt="">
+
+     <!--
+       <svg
+         width="95"
+         height="94"
+         viewBox="0 0 95 94"
+         class="h-auto w-6 text-indigo-500"
+         fill="currentColor"
+         xmlns="http://www.w3.org/2000/svg"
+       >
+         <path d="M96 0V47L48 94H0V47L48 0H96Z" />
+       </svg>
+-->
+       Image
+     </a>
+     <!-- logo - end -->
 
       <!-- nav - start -->
       <nav class="navigation hidden gap-12 lg:flex">
@@ -75,25 +79,41 @@
         >Contact Us</a
       >
 
-      <button
-        id="mobileHam"
-        type="button"
-        class="inline-flex items-center gap-2 rounded-lg transition-all bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </button>
-      <!-- buttons - end -->
+     <!-- Mobile nav button start -->
+     <button
+     id="mobileHam"
+     type="button"
+     class="inline-flex items-center gap-2 rounded-lg transition-all bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden"
+   >
+     <svg
+       id="mobileOpen"
+       xmlns="http://www.w3.org/2000/svg"
+       class="h-6 w-6"
+       viewBox="2 2 20 20"
+       fill="currentColor"
+     >
+       <path
+         fill-rule="evenodd"
+         d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
+         clip-rule="evenodd"
+       />
+     </svg>
+
+     <svg
+       id="mobileNavHamClose"
+       xmlns="http://www.w3.org/2000/svg"
+       class="h-6 w-6 hidden"
+       viewBox="3 2 19 19"
+       fill="currentColor"
+     >
+       <path
+         fill-rule="evenodd"
+         d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"
+         clip-rule="evenodd"
+       ></path>
+     </svg>
+   </button>
+   <!-- Mobile nav button - end -->
 
       <!-- Mobile nav start -->
       <nav
@@ -337,24 +357,30 @@
     <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
       <div class="mb-5 mx-auto text-center gap-12 border-t pt-5">
         <div class="">
-          <a
-            href="/"
-            class="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
-            aria-label="logo"
-          >
-            <svg
-              width="95"
-              height="94"
-              viewBox="0 0 95 94"
-              class="h-auto w-5 text-indigo-500"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-            </svg>
+            <!-- logo - start -->
+      <a
+      href="index.html#"
+      class="inline-flex items-center gap-2.5 text-3xl font-bold text-[#023a6e] md:text-3xl"
+      aria-label="logo"
+    >
 
-            Image
-          </a>
+    <img class="w-16 h-16 md:w-20 md:h-20" src="img/logo2.png" alt="">
+
+    <!--
+      <svg
+        width="95"
+        height="94"
+        viewBox="0 0 95 94"
+        class="h-auto w-6 text-indigo-500"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M96 0V47L48 94H0V47L48 0H96Z" />
+      </svg>
+-->
+      Image
+    </a>
+    <!-- logo - end -->
         </div>
       </div>
 
