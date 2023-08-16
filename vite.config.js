@@ -14,7 +14,7 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),
-        sub: resolve(root, "gallerytempel.html"),
+        gallerytempel: resolve(root, "gallerytempel-1.html"),
       },
     },
     emptyOutDir: true,
