@@ -15,6 +15,7 @@ export default {
       input: {
         main: resolve(root, "index.html"),
         gallerytempel: resolve(root, "gallerytempel-1.html"),
+        galleryplan: resolve(root, "galleryplan-1.html")
       },
     },
     emptyOutDir: true,
