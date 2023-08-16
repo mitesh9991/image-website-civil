@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-p-28">
+<html lang="en" class="scroll-smooth scroll-p-28 noSelect">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image - Civil Engineer</title>
-    
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -35,31 +34,31 @@
       <!-- logo - end -->
 
       <!-- nav - start -->
-      <nav class=" navigation hidden gap-12 lg:flex">
-        <a href="#home" class="text-lg font-semibold ">Home</a>
+      <nav class="navigation hidden gap-12 lg:flex">
+        <a href="#home" class="text-lg font-semibold">Home</a>
         <a
           href="#features"
-          class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 "
+          class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500"
           >Features</a
         >
         <a
-        href="#Gallery"
-        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 "
-        >Gallery</a
-      >
-      <a
-        href="#About"
-        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 "
-        >About</a
-      >
+          href="#Gallery"
+          class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500"
+          >Gallery</a
+        >
+        <a
+          href="#About"
+          class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500"
+          >About</a
+        >
         <a
           href="#Contact"
-          class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 "
+          class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500"
           >Contact</a
         >
         <a
           href="#Founder"
-          class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 "
+          class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500"
           >Founder</a
         >
       </nav>
@@ -72,12 +71,14 @@
         >Contact Us</a
       >
 
+      <!-- Mobile nav button start -->
       <button
-      id="mobileHam"
+        id="mobileHam"
         type="button"
-        class="inline-flex items-center gap-2 rounded-lg transition-all  bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden"
+        class="inline-flex items-center gap-2 rounded-lg transition-all bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden"
       >
         <svg
+          id="mobileOpen"
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
           viewBox="0 0 20 20"
@@ -90,12 +91,27 @@
           />
         </svg>
 
+        <svg
+          id="mobileNavHamClose"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 hidden"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
       </button>
-        <!-- buttons - end -->
+      <!-- Mobile nav button - end -->
 
-<!-- Mobile nav start -->
-      <nav id="mobileNav" class="px-4 absolute top-20 left-0 right-0 transform  duration-1000 origin-top text-center space-y-4 py-4 hidden flex-col bg-white  md:hidden">
-
+      <!-- Mobile nav start -->
+      <nav
+        id="mobileNav"
+        class="px-4 absolute top-20 left-0 right-0 transform duration-1000 origin-top text-center space-y-4 py-4 hidden flex-col bg-white md:hidden"
+      >
         <a href="#" class="text-lg font-semibold text-indigo-500">Home</a>
         <a
           href="#features"
@@ -103,15 +119,15 @@
           >Features</a
         >
         <a
-        href="#Gallery"
-        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-        >Gallery</a
-      >
-      <a
-        href="#About"
-        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-        >About</a
-      >
+          href="#Gallery"
+          class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+          >Gallery</a
+        >
+        <a
+          href="#About"
+          class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+          >About</a
+        >
         <a
           href="#Contact"
           class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
@@ -122,69 +138,68 @@
           class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
           >Founder</a
         >
-
       </nav>
 
       <!-- Mobile nav end -->
-
-    
     </header>
 
-
+   
     <!-- Hero start -->
-<section id="home">
-    <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
-      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <section
-          class="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48"
-        >
-          <!-- image - start -->
-          <img
-            src="img/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg"
-            loading="lazy"
-            alt="Photo by Fakurian Design"
-            class="absolute inset-0 h-full w-full object-cover object-center"
-          />
-          <!-- image - end -->
+    <section id="home">
+      <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <section
+            class="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48"
+          >
+            <!-- image - start -->
+            <img
+              src="img/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg"
+              loading="lazy"
+              alt="Photo by Fakurian Design"
+              class="absolute inset-0 h-full w-full object-cover object-center"
+            />
+            <!-- image - end -->
 
-          <!-- overlay - start -->
-          <div class="absolute inset-0 bg-indigo-300 mix-blend-multiply"></div>
-          <!-- overlay - end -->
-
-          <!-- text start -->
-          <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
-            <h1
-              class="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-4 md:text-6xl"
-            >
-              Make Your Dream Home
-            </h1>
-            <p
-              class="mb-4 text-center text-lg text-gray-100 sm:text-xl md:mb-8"
-            >
-              A Showcase of Civil Engineering Ingenuity
-            </p>
-
+            <!-- overlay - start -->
             <div
-              class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center"
-            >
-              <a
-                href="#"
-                class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
-                >Start now</a
-              >
+              class="absolute inset-0 bg-indigo-300 mix-blend-multiply"
+            ></div>
+            <!-- overlay - end -->
 
-              <a
-                href="#"
-                class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
-                >Take tour</a
+            <!-- text start -->
+            <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
+              <h1
+                class="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-4 md:text-6xl"
               >
+                Make Your Dream Home
+              </h1>
+              <p
+                class="mb-4 text-center text-lg text-gray-100 sm:text-xl md:mb-8"
+              >
+                A Showcase of Civil Engineering Ingenuity
+              </p>
+
+              <div
+                class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center"
+              >
+                <a
+                  href="#"
+                  class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
+                  >Start now</a
+                >
+
+                <a
+                  href="#"
+                  class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
+                  >Take tour</a
+                >
+              </div>
             </div>
-          </div>
-          <!-- text end -->
-        </section>
+            <!-- text end -->
+          </section>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
     <!-- hero - end -->
 
     <!-- Feature start -->
@@ -198,8 +213,6 @@
             >
               Features
             </h2>
-
-       
           </div>
           <!-- text - end -->
 
@@ -211,19 +224,27 @@
               <div
                 class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
               >
-           
-
-                <svg xmlns="http://www.w3.org/2000/svg"   class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor" viewBox="0 0 24 24"><path d="M3 19.0002V5.70058C3 5.28007 3.26307 4.90449 3.65826 4.76079L13.3291 1.24411C13.5886 1.14974 13.8755 1.28361 13.9699 1.54313C13.9898 1.5979 14 1.65573 14 1.714V6.66682L20.3162 8.77223C20.7246 8.90834 21 9.29048 21 9.72091V19.0002H23V21.0002H1V19.0002H3ZM5 19.0002H12V3.85555L5 6.40101V19.0002ZM19 19.0002V10.4417L14 8.77501V19.0002H19Z"></path></svg>
-
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 19.0002V5.70058C3 5.28007 3.26307 4.90449 3.65826 4.76079L13.3291 1.24411C13.5886 1.14974 13.8755 1.28361 13.9699 1.54313C13.9898 1.5979 14 1.65573 14 1.714V6.66682L20.3162 8.77223C20.7246 8.90834 21 9.29048 21 9.72091V19.0002H23V21.0002H1V19.0002H3ZM5 19.0002H12V3.85555L5 6.40101V19.0002ZM19 19.0002V10.4417L14 8.77501V19.0002H19Z"
+                  ></path>
+                </svg>
               </div>
 
               <div>
-                <h3 class="mb-2 text-lg font-semibold md:text-xl">Construction</h3>
+                <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                  Construction
+                </h3>
                 <p class="mb-2 text-gray-500">
-                  Crafting Tomorrow's Spaces: Our construction expertise brings dreams to life.
+                  Crafting Tomorrow's Spaces: Our construction expertise brings
+                  dreams to life.
                 </p>
               </div>
             </div>
@@ -234,23 +255,28 @@
               <div
                 class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl"
               >
-              <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-            
-              <path 
-              stroke-width="1" d="M7.05033 14.1214L4.929 16.2427L7.75743 19.0711L19.0711 7.75743L16.2427 4.929L14.1214 7.05033L15.5356 8.46454L14.1214 9.87875L12.7072 8.46454L11.293 9.87875L12.7072 11.293L11.293 12.7072L9.87875 11.293L8.46454 12.7072L9.87875 14.1214L8.46454 15.5356L7.05033 14.1214ZM16.9498 2.80768L21.1925 7.05033C21.583 7.44085 21.583 8.07401 21.1925 8.46454L8.46454 21.1925C8.07401 21.583 7.44085 21.583 7.05033 21.1925L2.80768 16.9498C2.41716 16.5593 2.41716 15.9261 2.80768 15.5356L15.5356 2.80768C15.9261 2.41716 16.5593 2.41716 16.9498 2.80768ZM14.1214 18.3635L15.5356 16.9493L17.7781 19.1918H19.1923V17.7776L16.9498 15.5351L18.364 14.1209L20.9997 16.7566V20.9999H16.7578L14.1214 18.3635ZM5.63597 9.87812L2.80754 7.04969C2.41702 6.65917 2.41702 6.02601 2.80754 5.63548L5.63597 2.80705C6.02649 2.41653 6.65966 2.41653 7.05018 2.80705L9.87861 5.63548L8.4644 7.04969L6.34308 4.92837L4.92886 6.34259L7.05018 8.46391L5.63597 9.87812Z"></path>
-            </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-width="1"
+                    d="M7.05033 14.1214L4.929 16.2427L7.75743 19.0711L19.0711 7.75743L16.2427 4.929L14.1214 7.05033L15.5356 8.46454L14.1214 9.87875L12.7072 8.46454L11.293 9.87875L12.7072 11.293L11.293 12.7072L9.87875 11.293L8.46454 12.7072L9.87875 14.1214L8.46454 15.5356L7.05033 14.1214ZM16.9498 2.80768L21.1925 7.05033C21.583 7.44085 21.583 8.07401 21.1925 8.46454L8.46454 21.1925C8.07401 21.583 7.44085 21.583 7.05033 21.1925L2.80768 16.9498C2.41716 16.5593 2.41716 15.9261 2.80768 15.5356L15.5356 2.80768C15.9261 2.41716 16.5593 2.41716 16.9498 2.80768ZM14.1214 18.3635L15.5356 16.9493L17.7781 19.1918H19.1923V17.7776L16.9498 15.5351L18.364 14.1209L20.9997 16.7566V20.9999H16.7578L14.1214 18.3635ZM5.63597 9.87812L2.80754 7.04969C2.41702 6.65917 2.41702 6.02601 2.80754 5.63548L5.63597 2.80705C6.02649 2.41653 6.65966 2.41653 7.05018 2.80705L9.87861 5.63548L8.4644 7.04969L6.34308 4.92837L4.92886 6.34259L7.05018 8.46391L5.63597 9.87812Z"
+                  ></path>
+                </svg>
               </div>
 
               <div>
-                <h3 class="mb-2 text-lg font-semibold md:text-xl">Engineering</h3>
+                <h3 class="mb-2 text-lg font-semibold md:text-xl">
+                  Engineering
+                </h3>
                 <p class="mb-2 text-gray-500">
-                  Our engineering prowess transforms ideas into tangible solutions. ,we design and innovate for a better, more connected world.
+                  Our engineering prowess transforms ideas into tangible
+                  solutions. ,we design and innovate for a better, more
+                  connected world.
                 </p>
               </div>
             </div>
@@ -274,16 +300,14 @@
                     stroke-width="2"
                     d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
                   />
-                  
                 </svg>
-
-
               </div>
 
               <div>
                 <h3 class="mb-2 text-lg font-semibold md:text-xl">Support</h3>
                 <p class="mb-2 text-gray-500">
-                  Elevating Your Vision, Supporting Your Journey: Our unwavering support is the cornerstone of your success.
+                  Elevating Your Vision, Supporting Your Journey: Our unwavering
+                  support is the cornerstone of your success.
                 </p>
               </div>
             </div>
@@ -297,302 +321,330 @@
 
     <!-- gallery - start -->
     <section id="Gallery">
-    <div class="bg-white py-6 sm:py-8 lg:py-12">
-      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <h2
-          class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12"
-        >
-          Gallery
-        </h2>
-
-        <div
-          class="mb-4 grid grid-cols-2 gap-4 md:mb-8 md:gap-6 xl:gap-8"
-        >
-          <!-- image - start -->
-          <a
-            href="./gallerytempel-1.html"
-            class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <h2
+            class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12"
           >
-            <img
-              src="https://images.unsplash.com/photo-1524443169398-9aa1ceab67d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1148&q=80"
-              loading="lazy"
-              alt="Photo by Minh Pham"
-              class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-            />
+            Gallery
+          </h2>
 
-            <div
-              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
-            ></div>
-            <div class="group">
-              <span
-                class="relative mb-3 ml-4 flex items-center text-sm text-white md:ml-5 md:text-lg"
-                >Tempels
-                <svg
-                  class="block z-30 h-6 w-6 ml-1 fill-white group-hover:translate-x-2 transition-all"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                  ></path>
-                </svg>
-              </span>
-            </div>
-          </a>
-          <!-- image - end -->
-
-          <!-- image - start -->
-          <a
-            href="./galleryplan-1.html"
-            class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
-              loading="lazy"
-              alt="Photo by Magicle"
-              class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
-            />
-
-            <div
-              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
-            ></div>
-
-            <div class="group">
-              <span
-                class="relative mb-3 ml-4 flex items-center text-sm text-white md:ml-5 md:text-lg"
-                >Buildings
-                <svg
-                  class="block z-30 h-6 w-6 ml-1 fill-white group-hover:translate-x-2 transition-all"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                  ></path>
-                </svg>
-              </span>
-            </div>
+          <div class="mb-4 grid grid-cols-2 gap-4 md:mb-8 md:gap-6 xl:gap-8">
+            <!-- image - start -->
+            <a
+              href="./gallerytempel-1.html"
+              class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
             >
-          </a>
-          <!-- image - end -->
+              <img
+                src="https://images.unsplash.com/photo-1524443169398-9aa1ceab67d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1148&q=80"
+                loading="lazy"
+                alt="Photo by Minh Pham"
+                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+              />
 
-   
+              <div
+                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+              ></div>
+              <div class="group">
+                <span
+                  class="relative mb-3 ml-4 flex items-center text-sm text-white md:ml-5 md:text-lg"
+                  >Tempels
+                  <svg
+                    class="block z-30 h-6 w-6 ml-1 fill-white group-hover:translate-x-2 transition-all"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+            <!-- image - end -->
 
+            <!-- image - start -->
+            <a
+              href="./galleryplan-1.html"
+              class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
+                loading="lazy"
+                alt="Photo by Magicle"
+                class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+              />
+
+              <div
+                class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"
+              ></div>
+
+              <div class="group">
+                <span
+                  class="relative mb-3 ml-4 flex items-center text-sm text-white md:ml-5 md:text-lg"
+                  >Buildings
+                  <svg
+                    class="block z-30 h-6 w-6 ml-1 fill-white group-hover:translate-x-2 transition-all"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              >
+            </a>
+            <!-- image - end -->
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
     <!-- gallery - end -->
-
-
-
 
     <!-- about us start -->
 
     <section id="About">
-    <div class="bg-white py-6 sm:py-8 lg:py-12">
-      <h2
-      class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12"
-    >
-      About Us
-    </h2>
-      <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <h2
+          class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12"
+        >
+          About Us
+        </h2>
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+            <div>
+              <div
+                class="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto lg:h-[30rem]"
+              >
+                <img
+                  src="img/aec_autocad.jpg"
+                  loading="lazy"
+                  alt="Photo by Martin Sanchez"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+            </div>
 
-        <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
-          <div>
-            <div class="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto lg:h-[30rem]">
-              <img src="img/aec_autocad.jpg" loading="lazy" alt="Photo by Martin Sanchez" class="h-full w-full object-cover object-center" />
+            <div class="md:pt-8">
+              <p class="text-center font-bold text-indigo-500 md:text-left">
+                Who we are
+              </p>
+
+              <h1
+                class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left"
+              >
+                Our competitive advantage
+              </h1>
+
+              <p class="mb-6 text-gray-500 sm:text-lg md:mb-8">
+                At ImageCivl, we are a dedicated team of passionate civil
+                engineers who are committed to shaping the world around us. With
+                a wealth of experience and a drive for innovation, we specialize
+                in delivering exceptional solutions for a wide range of civil
+                engineering challenges.<br /><br />
+
+                Our mission is to create a sustainable and resilient future by
+                designing, planning, and constructing infrastructure that stands
+                the test of time. From towering bridges that connect communities
+                to efficient transportation networks that keep our cities
+                moving, we take pride in every project we undertake.
+              </p>
             </div>
           </div>
-    
-          <div class="md:pt-8">
-            <p class="text-center font-bold text-indigo-500 md:text-left">Who we are</p>
-    
-            <h1 class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">Our competitive advantage</h1>
-    
-            <p class="mb-6 text-gray-500 sm:text-lg md:mb-8">
-              At ImageCivl, we are a dedicated team of passionate civil engineers who are committed to shaping the world around us. With a wealth of experience and a drive for innovation, we specialize in delivering exceptional solutions for a wide range of civil engineering challenges.<br /><br />
-    
-              Our mission is to create a sustainable and resilient future by designing, planning, and constructing infrastructure that stands the test of time. From towering bridges that connect communities to efficient transportation networks that keep our cities moving, we take pride in every project we undertake.
-            </p>
-    
-               </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- about end -->
-
-
-
 
     <!-- Contact start -->
 
     <section id="Contact" class="text-gray-600 body-font relative lg:py-10">
-
-           <!-- text - start -->
-           <div class="mb-10 md:mb-10 md:mt-5">
-            <h2
-              class="mb-4 text-center text-2xl font-bold text-gray-800 lg:py-10 md:mb-6 lg:text-3xl"
-            >
-             Contact Us
-            </h2>
-  
-        
-          </div>
-          <!-- text - end -->
-  
+      <!-- text - start -->
+      <div class="mb-10 md:mb-10 md:mt-5">
+        <h2
+          class="mb-4 text-center text-2xl font-bold text-gray-800 lg:py-10 md:mb-6 lg:text-3xl"
+        >
+          Contact Us
+        </h2>
+      </div>
+      <!-- text - end -->
 
       <div class="container px-8 py-2 mx-auto flex justify-center">
-        <div class=" bg-gray-300 rounded-lg overflow-hidden p-10 py-20 flex mx-auto justify-center relative lg:p-28">
-          <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d229.81617266350867!2d69.34850624591176!3d22.837315355402747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92df0e3b439f223%3A0x3f6ac39c1e54c97d!2sImage%20Architects%20%26%20Civil%20Engineers!5e0!3m2!1sen!2sin!4v1692168594288!5m2!1sen!2sin" > </iframe>
+        <div
+          class="bg-gray-300 rounded-lg overflow-hidden p-10 py-20 flex mx-auto justify-center relative lg:p-28"
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            class="absolute inset-0"
+            frameborder="0"
+            title="map"
+            marginheight="0"
+            marginwidth="0"
+            scrolling="no"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d229.81617266350867!2d69.34850624591176!3d22.837315355402747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92df0e3b439f223%3A0x3f6ac39c1e54c97d!2sImage%20Architects%20%26%20Civil%20Engineers!5e0!3m2!1sen!2sin!4v1692168594288!5m2!1sen!2sin"
+          >
+          </iframe>
           <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
             <div class="lg:w-1/2 px-6">
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-              <p class="mt-1">shri harikrishna plaza, office no 102, outside sona wala naka, layza road , mandvi-kuchchh (370465)</p>
+              <h2
+                class="title-font font-semibold text-gray-900 tracking-widest text-xs"
+              >
+                ADDRESS
+              </h2>
+              <p class="mt-1">
+                shri harikrishna plaza, office no 102, outside sona wala naka,
+                layza road , mandvi-kuchchh (370465)
+              </p>
             </div>
             <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-              <a class="text-indigo-500 leading-relaxed">kiranbhagwant@gmail.com</a>
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+              <h2
+                class="title-font font-semibold text-gray-900 tracking-widest text-xs"
+              >
+                EMAIL
+              </h2>
+              <a class="text-indigo-500 leading-relaxed"
+                >kiranbhagwant@gmail.com</a
+              >
+              <h2
+                class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4"
+              >
+                PHONE
+              </h2>
               <p class="leading-relaxed">+91 96380 77036</p>
             </div>
           </div>
         </div>
-
-     
       </div>
     </section>
 
     <!-- Contact end -->
 
-
-
     <!-- Founder start -->
     <section id="Founder">
-    <div class="bg-white py-6 sm:py-8 lg:py-12  lg:max-w-5xl mx-auto ">
-      <div class="mx-auto max-w-screen-xl px-4 md:px-8">
-        <!-- text - start -->
-        <div class="mb-10 md:mb-16">
-          <h2
-            class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"
+      <div class="bg-white py-6 sm:py-8 lg:py-12 lg:max-w-5xl mx-auto">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+          <!-- text - start -->
+          <div class="mb-10 md:mb-16">
+            <h2
+              class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl"
+            >
+              Founder
+            </h2>
+          </div>
+          <!-- text - end -->
+
+          <div
+            class="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-2 lg:gap-x-8 lg:gap-y-12"
           >
-          Founder
-          </h2>
-
-      
-        </div>
-        <!-- text - end -->
-
-        <div
-          class="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-2 lg:gap-x-8 lg:gap-y-12"
-        >
-          <!-- person - start -->
-          <div class="flex flex-col items-center">
-            <div
-              class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32"
-            >
-              <img
-                src="img/founder-1-crop.jpg"
-                loading="lazy"
-                alt="Photo by Radu Florin"
-                class="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div>
-              <div class="text-center font-bold text-indigo-500 md:text-lg">
-                Ramesh Bhagwant
-              </div>
-              <p
-                class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base"
+            <!-- person - start -->
+            <div class="flex flex-col items-center">
+              <div
+                class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32"
               >
-                Founder
-              </p>
+                <img
+                  src="img/founder-1-crop.jpg"
+                  loading="lazy"
+                  alt="Photo by Radu Florin"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
 
-              <!-- social - start -->
-              <div class="flex justify-center">
-                <div class="flex gap-4">
-        
-
-                  <a
-                    href="https://api.whatsapp.com/send?phone=919409859109&text=Hello"
-                    target="_blank"
-                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
-                  >
-                    <svg
-                      class="h-5 w-5"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                     <path d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"></path>
-                    </svg>
-                  </a>
+              <div>
+                <div class="text-center font-bold text-indigo-500 md:text-lg">
+                  Ramesh Bhagwant
                 </div>
-              </div>
-              <!-- social - end -->
-            </div>
-          </div>
-          <!-- person - end -->
+                <p
+                  class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base"
+                >
+                  Founder
+                </p>
 
-          <!-- person - start -->
-          <div class="flex flex-col items-center">
-            <div
-              class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32"
-            >
-              <img
-                src="img/founder-2-crop.jpg"
-                loading="lazy"
-                alt="Photo by Ayo Ogunseinde"
-                class="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div>
-              <div class="text-center font-bold text-indigo-500 md:text-lg">
-                Kiran Bhagwant
+                <!-- social - start -->
+                <div class="flex justify-center">
+                  <div class="flex gap-4">
+                    <a
+                      href="https://api.whatsapp.com/send?phone=919409859109&text=Hello"
+                      target="_blank"
+                      class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
+                    >
+                      <svg
+                        class="h-5 w-5"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- social - end -->
               </div>
-              <p
-                class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base"
+            </div>
+            <!-- person - end -->
+
+            <!-- person - start -->
+            <div class="flex flex-col items-center">
+              <div
+                class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32"
               >
-                CTO
-              </p>
-
-              <!-- social - start -->
-              <div class="flex justify-center">
-                <div class="flex gap-4">
-       
-
-                  <a
-                    href="https://api.whatsapp.com/send?phone=9638077036&text=Hello"
-                    target="_blank"
-                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
-                  >
-                    <svg
-                      class="h-5 w-5"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                     <path d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"></path>
-                    </svg>
-                  </a>
-                </div>
+                <img
+                  src="img/founder-2-crop.jpg"
+                  loading="lazy"
+                  alt="Photo by Ayo Ogunseinde"
+                  class="h-full w-full object-cover object-center"
+                />
               </div>
-              <!-- social - end -->
+
+              <div>
+                <div class="text-center font-bold text-indigo-500 md:text-lg">
+                  Kiran Bhagwant
+                </div>
+                <p
+                  class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base"
+                >
+                  CTO
+                </p>
+
+                <!-- social - start -->
+                <div class="flex justify-center">
+                  <div class="flex gap-4">
+                    <a
+                      href="https://api.whatsapp.com/send?phone=9638077036&text=Hello"
+                      target="_blank"
+                      class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
+                    >
+                      <svg
+                        class="h-5 w-5"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- social - end -->
+              </div>
             </div>
+            <!-- person - end -->
           </div>
-          <!-- person - end -->
         </div>
       </div>
-    </div>
-  </section>
+    </section>
     <!-- Founder end -->
 
     <!-- whatsapp floting button -->
@@ -612,28 +664,41 @@
     <!-- whatsapp button end -->
 
     <!-- footer - start -->
-  
-      <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <div class="mb-5 mx-auto text-center gap-12 border-t pt-5 ">
-          <div class="">
 
+    <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div class="mb-5 mx-auto text-center gap-12 border-t pt-5">
+        <div class="">
+          <a
+            href="/"
+            class="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
+            aria-label="logo"
+          >
+            <svg
+              width="95"
+              height="94"
+              viewBox="0 0 95 94"
+              class="h-auto w-5 text-indigo-500"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M96 0V47L48 94H0V47L48 0H96Z" />
+            </svg>
 
-            <a href="/" class="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl" aria-label="logo">
-              <svg width="95" height="94" viewBox="0 0 95 94" class="h-auto w-5 text-indigo-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-              </svg>
-  
-              Image
-            </a>
-          </div>
-       
+            Image
+          </a>
         </div>
-    
-        <div class="border-t py-8 text-center text-sm text-gray-400">© 2005 - Present ImageCivl. All rights reserved.</div>
-      </footer>
-    
+      </div>
+
+      <div class="border-t py-8 text-center text-sm text-gray-400">
+        © 2005 - Present ImageCivl. All rights reserved.
+      </div>
+    </footer>
+
     <!-- footer - end -->
   </body>
-  <script type="module" src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script
+    type="module"
+    src="./node_modules/flowbite/dist/flowbite.min.js"
+  ></script>
   <script type="module" src="assest/script.js"></script>
 </html>
